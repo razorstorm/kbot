@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 token = 'EAAXSUovhrQkBAJfw0cqLd1bZCpZBn9564eLqucEuJPPyZC1Gqy0AQvx6F0twfcnjtG4ZC5Ui9CFLj33cVJeS6ih86gVFYFtuzWzyGBf7SSvSO7oQHef86YMbZASBmDsPROqOktQciCs0UNfCmIFDkiseWmLM5PzHZAUhU95zx2dQZDZD'  # noqa
 
-file_ = open('kathtest.txt')
+file_ = open('messages.txt')
 markov = markovgen.Markov(file_)
 
 
@@ -31,10 +31,11 @@ def generate_speech():
 
 @app.route('/receive', methods=['POST'])
 def receive():
-    print(request.data)
-    data = json.loads(request.data)
-
     sentences = generate_speech()
+
+    print(request.data)
+    print(request.__dict__)
+    data = json.loads(request.data)
 
     try:
         for entry in data['entry']:
