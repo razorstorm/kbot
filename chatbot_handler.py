@@ -8,7 +8,7 @@ from flask import request, Flask
 
 app = Flask(__name__)
 
-token = 'EAAXSUovhrQkBAJfw0cqLd1bZCpZBn9564eLqucEuJPPyZC1Gqy0AQvx6F0twfcnjtG4ZC5Ui9CFLj33cVJeS6ih86gVFYFtuzWzyGBf7SSvSO7oQHef86YMbZASBmDsPROqOktQciCs0UNfCmIFDkiseWmLM5PzHZAUhU95zx2dQZDZD'  # noqa
+token = 'EAAgZAanyls4sBAN12HSpOt7txZABocVsuw1GchwcUNUIRXayXpmXudAa1poT0bnsjI5LZBByvItdJv2yGLA6KStAwMguTAvlm5ZBGK56dSv9oLkCZCRcxKtQ0j21pg4SAUShyeK9wbqdWrtutoybmLuG3iw469ZCucrGG3kI9ko1ZAlBZC9q8C59'  # noqa
 
 file_ = open('messages.txt')
 markov = markovgen.Markov(file_)
