@@ -1,4 +1,4 @@
-ipython==5.2.1
+ipython==7.16.3
 requests==2.13.0
 gunicorn==19.6.0
 appdirs==1.4.0
