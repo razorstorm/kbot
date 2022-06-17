@@ -13,4 +13,4 @@ six==1.10.0
 Werkzeug==0.11.15
 markovify==0.6.0
 Unidecode==0.4.21
-numpy==1.13.1
+numpy==1.21.0
